@@ -8,16 +8,50 @@
 </head>
 <body>
   <div class="container">
-    <div class="row center">
+    <!-- landing page -->
+    <div class="row center hidden" data-view="landing-page">
       <h1>Weekly Planner</h1>
     </div>
     <div class="row center">
       <button class="add-button" type="button">Add Entry</button>
     </div>
-    <div data-view="add-entry">
-      <div
+  </div>
+
+  <!-- add entry modal -->
+  <div class="relative">
+    <div id="modal-view" class="row hidden" data-view="add-entry">
+      <div class="modal-bg fixed">
+        <div class="modal-box modal-center">
+          <div class="row">
+            <div class="column-full">
+              <div class="row">
+                <h2>Add Entry</h2>
+              </div>
+            </div>
+            <div class="column-full">
+              <div class="row">
+                <form>
+                  <label for="day">Day of the Week:</label>
+                  <select>
+                    <option value="">Day of the Week:</option>
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
   <script src="main.js"></script>
 </body>
 </html>
