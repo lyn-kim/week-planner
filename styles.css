@@ -32,6 +32,16 @@
   width: 100%;
 }
 
+.text-align-right {
+  text-align: right;
+}
+
+.justify-end {
+  justify-content: end;
+  margin-right: 3.6rem;
+  margin-top: 0.5rem;
+}
+
 button {
   background-color: green;
   border: none;
@@ -69,4 +79,8 @@ button {
 
 .flex-end {
   justify-content: flex-end;
+}
+
+.entry-submit-btn {
+  text-align: right;
 }
