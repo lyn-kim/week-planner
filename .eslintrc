@@ -1,0 +1,47 @@
+{
+  "root": true,
+  "env": {
+    "node": false,
+    "browser": true
+  },
+  "parserOptions": {
+    "sourceType": "script"
+  },
+  "extends": [
+    "eslint:recommended",
+    "standard"
+  ],
+  "rules": {
+    "semi": [
+      "error",
+      "always"
+    ],
+    "padded-blocks": "off",
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "curly": [
+      "error",
+      "multi-line"
+    ],
+    "no-var": "off",
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ]
+  }
+}
