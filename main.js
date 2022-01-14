@@ -1,7 +1,10 @@
-$button = document.querySelector('.add-button');
+var $button = document.querySelector('.add-button');
 $button.addEventListener('click', handleAddButton);
 
-function handleAddButton {
+var $submit = document.querySelector('.entry-submit-btn');
+$submit.addEventListener('submit', handleSubmit);
+
+function handleAddButton(event) {
   openAddEntryModal();
 }
 
@@ -17,4 +20,8 @@ function switchViews(dataView) {
 
 function openAddEntryModal() {
   switchViews('add-entry');
+}
+
+function handleSubmit(event) {
+  switchViews('landing-page');
 }
