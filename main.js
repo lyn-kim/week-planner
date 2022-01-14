@@ -1,13 +1,13 @@
 var $button = document.querySelector('.add-button');
 $button.addEventListener('click', handleAddButton);
 
-var $submit = document.querySelector('.entry-submit-btn');
-$submit.addEventListener('submit', handleSubmit);
+var $form = document.querySelector('form');
+$form.addEventListener('submit', handleSubmit);
 
 var $views = document.querySelectorAll('div[data-view]');
 
-// var $modalView = document.getElementById('modal-view');
-// $modalView.addEventListener('click', handleModal);
+var $modalView = document.getElementById('modal-view');
+ $modalView.addEventListener('click', handleModal);
 
 function handleAddButton(event) {
   openAddEntryModal();
@@ -29,8 +29,10 @@ function openAddEntryModal() {
 
 function handleSubmit(event) {
   switchViews('landing-page');
+    $modalView.className = 'row hidden';
+    event.preventDefault();
 }
 
-// function handleModal(event) {
-//   $modalView.className = 'row';
-// }
+function handleModal(event) {
+  $modalView.className = 'row';
+}

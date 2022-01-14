@@ -2,10 +2,6 @@
   margin: 0;
 }
 
-.hidden {
-  display: none;
-}
-
 .container {
   margin: auto;
   width: 500px;
@@ -87,4 +83,8 @@ button {
 
 .landing-title {
   margin: auto;
+}
+
+.hidden {
+  display: none;
 }
