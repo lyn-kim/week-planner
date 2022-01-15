@@ -4,7 +4,7 @@
 
 .container {
   margin: auto;
-  width: 500px;
+  width: 90vw;
 }
 
 .row {
@@ -36,6 +36,14 @@
   justify-content: end;
   margin-right: 3.6rem;
   margin-top: 0.5rem;
+}
+
+.align-center {
+  align-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 button {
@@ -83,6 +91,17 @@ button {
 
 .landing-title {
   margin: auto;
+}
+
+.day-container {
+  padding: 1.2rem;
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid;
+}
+
+.day-container > p {
+  text-align: center;
 }
 
 .hidden {
